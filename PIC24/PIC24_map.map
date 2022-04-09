@@ -1,0 +1,72 @@
+Release 9.2.04i Map J.40
+Xilinx Map Application Log File for Design 'PIC24'
+
+Design Information
+------------------
+Command Line   : C:\Xilinx92i\bin\nt\map.exe -ise
+C:/Users/ionut/Desktop/Buzduga_Ionut_Gabriel_CEN31B_Project/PIC24/PIC24.ise
+-intstyle ise -p xc3s400-ft256-4 -cm area -pr b -k 4 -c 100 -o PIC24_map.ncd
+PIC24.ngd PIC24.pcf 
+Target Device  : xc3s400
+Target Package : ft256
+Target Speed   : -4
+Mapper Version : spartan3 -- $Revision: 1.36 $
+Mapped Date    : Wed Jan 19 19:42:27 2022
+
+Mapping design into LUTs...
+Running directed packing...
+Running delay-based LUT packing...
+Running related packing...
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:    3
+Logic Utilization:
+  Total Number Slice Registers:        32 out of   7,168    1%
+    Number used as Flip Flops:                    15
+    Number used as Latches:                       17
+  Number of 4 input LUTs:             434 out of   7,168    6%
+Logic Distribution:
+  Number of occupied Slices:                          268 out of   3,584    7%
+    Number of Slices containing only related logic:     268 out of     268  100%
+    Number of Slices containing unrelated logic:          0 out of     268    0%
+      *See NOTES below for an explanation of the effects of unrelated logic
+Total Number of 4 input LUTs:            515 out of   7,168    7%
+  Number used as logic:                434
+  Number used as a route-thru:           1
+  Number used for Dual Port RAMs:       64
+    (Two LUTs used per Dual Port RAM)
+  Number used as 16x1 RAMs:             16
+  Number of bonded IOBs:               53 out of     173   30%
+    IOB Flip Flops:                    19
+  Number of GCLKs:                     1 out of       8   12%
+
+Total equivalent gate count for design:  9,486
+Additional JTAG gate count for IOBs:  2,544
+Peak Memory Usage:  189 MB
+Total REAL time to MAP completion:  2 secs 
+Total CPU time to MAP completion:   0 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Mapping completed.
+See MAP report file "PIC24_map.mrp" for details.

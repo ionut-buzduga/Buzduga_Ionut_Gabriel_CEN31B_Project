@@ -1,0 +1,12 @@
+sch2vhdl -intstyle ise -family spartan3 -flat -suppress -w "C:/Users/ionut/Desktop/PIC24/PIC24.sch" PIC24.vhf
+sch2vhdl -intstyle ise -family spartan3 -flat -suppress -w "C:/Users/ionut/Desktop/Buzduga_Ionut_Gabriel_CEN31B_Project/PIC24/PIC24.sch" PIC24.vhf
+xst -ise "C:/Users/ionut/Desktop/Buzduga_Ionut_Gabriel_CEN31B_Project/PIC24/PIC24.ise" -intstyle ise -ifn PIC24.xst -ofn PIC24.syr
+ngdbuild -ise "C:/Users/ionut/Desktop/Buzduga_Ionut_Gabriel_CEN31B_Project/PIC24/PIC24.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-ft256-4 "PIC24.ngc" PIC24.ngd
+map -ise "C:/Users/ionut/Desktop/Buzduga_Ionut_Gabriel_CEN31B_Project/PIC24/PIC24.ise" -intstyle ise -p xc3s400-ft256-4 -cm area -pr b -k 4 -c 100 -o PIC24_map.ncd PIC24.ngd PIC24.pcf
+par -ise "C:/Users/ionut/Desktop/Buzduga_Ionut_Gabriel_CEN31B_Project/PIC24/PIC24.ise" -w -intstyle ise -ol std -t 1 PIC24_map.ncd PIC24.ncd PIC24.pcf
+trce -ise "C:/Users/ionut/Desktop/Buzduga_Ionut_Gabriel_CEN31B_Project/PIC24/PIC24.ise" -intstyle ise -e 3 -s 4 -xml PIC24 PIC24.ncd -o PIC24.twr PIC24.pcf
+xst -ise "C:/Users/ionut/Desktop/Buzduga_Ionut_Gabriel_CEN31B_Project/PIC24/PIC24.ise" -intstyle ise -ifn PIC24.xst -ofn PIC24.syr
+ngdbuild -ise "C:/Users/ionut/Desktop/Buzduga_Ionut_Gabriel_CEN31B_Project/PIC24/PIC24.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-ft256-4 "PIC24.ngc" PIC24.ngd
+map -ise "C:/Users/ionut/Desktop/Buzduga_Ionut_Gabriel_CEN31B_Project/PIC24/PIC24.ise" -intstyle ise -p xc3s400-ft256-4 -cm area -pr b -k 4 -c 100 -o PIC24_map.ncd PIC24.ngd PIC24.pcf
+par -ise "C:/Users/ionut/Desktop/Buzduga_Ionut_Gabriel_CEN31B_Project/PIC24/PIC24.ise" -w -intstyle ise -ol std -t 1 PIC24_map.ncd PIC24.ncd PIC24.pcf
+trce -ise "C:/Users/ionut/Desktop/Buzduga_Ionut_Gabriel_CEN31B_Project/PIC24/PIC24.ise" -intstyle ise -e 3 -s 4 -xml PIC24 PIC24.ncd -o PIC24.twr PIC24.pcf

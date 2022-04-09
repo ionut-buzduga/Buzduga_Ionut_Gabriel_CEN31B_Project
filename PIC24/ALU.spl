@@ -1,0 +1,17 @@
+[Inputs]
+CE_N
+CE_Z
+CE_OV
+CE_C
+Clk
+=RdData1[15:0]=
+=RdData2[15:0]=
+=ALUOP[3:0]=
+=bit4[3:0]=
+[Outputs]
+ZF
+C
+OV
+N
+=Y[15:0]=
+[BiDir]

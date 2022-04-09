@@ -1,0 +1,31 @@
+Release 9.2.04i ngdbuild J.40
+Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx92i\bin\nt\ngdbuild.exe -ise
+C:/Users/ionut/Desktop/Buzduga_Ionut_Gabriel_CEN31B_Project/PIC24/PIC24.ise
+-intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-ft256-4 PIC24.ngc PIC24.ngd
+
+Reading NGO file
+"C:/Users/ionut/Desktop/Buzduga_Ionut_Gabriel_CEN31B_Project/PIC24/PIC24.ngc"
+...
+
+Checking timing specifications ...
+Checking Partitions ...
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 101336 kilobytes
+
+Writing NGD file "PIC24.ngd" ...
+
+Writing NGDBUILD log file "PIC24.bld"...
